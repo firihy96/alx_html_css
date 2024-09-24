@@ -1,1 +1,450 @@
+@font-face {
+  font-family: "source sans pro";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Regular.otf);
+}
+/* ;
+src: url(../src/fonts/SourceSansPro/SourceSansPro-BlackIt.otf);
+src: url(../src/fonts/SourceSansPro/SourceSansPro-BoldIt.otf);
 
+src: url(../src/fonts/SourceSansPro/SourceSansPro-ExtraLightIt.otf);
+
+src: url(../src/fonts/SourceSansPro/SourceSansPro-Light.otf);
+
+src: url(../src/fonts/SourceSansPro/SourceSansPro-LightIt.otf);
+
+src: url(../src/fonts/SourceSansPro/SourceSansPro-SemiboldIt.otf); */
+@font-face {
+  font-family: "source sans pro / light";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Light.otf);
+}
+@font-face {
+  font-family: "source sans pro / bold";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Bold.otf);
+}
+@font-face {
+  font-family: "source sans pro / Semibold";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Semibold.otf);
+}
+@font-face {
+  font-family: "source sans pro / ExtraLight";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-ExtraLight.otf);
+}
+@font-face {
+  font-family: "source sans pro / black";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Black.otf);
+}
+@font-face {
+  font-family: "source sans pro / italic";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-It.otf);
+}
+@font-face {
+  font-family: "spin cycle ot";
+  src: url(../src/fonts/Spin-Cycle-OT/spincycle_ot.otf);
+  /* src: url(../src/fonts/Spin-Cycle-OT/spincycle_3d_ot.otf); */
+}
+:root {
+  --primary-color: #071629;
+  --secondary-color: #c271ff;
+}
+html {
+  width: 1440px;
+  height: 3718px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+body {
+  width: 1440px;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  font-family: "source sans pro";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 1103.02px;
+  height: 29.46px;
+  margin-inline: auto;
+  padding-top: 35.02px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  width: 234px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Start of styling Main & Sub Heading */
+#banner-cont {
+  position: relative;
+  width: 100%;
+  height: 1093px;
+  background-image: url(../src/images/Object.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "source sans pro / bold";
+  font-size: 120px;
+  text-align: center;
+  position: absolute;
+  top: 220px;
+  left: 377px;
+}
+.sub-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  width: 253px;
+  margin-inline: auto;
+  position: absolute;
+  top: 361px;
+  left: 593px;
+}
+/* End of styling Main & Sub Heading */
+
+/* Start of Styling Register Button */
+
+#banner button {
+  display: block;
+  margin-inline: auto;
+  background-color: var(--secondary-color);
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: transparent;
+  outline-color: transparent;
+  font-family: "source sans pro / Semibold";
+  box-shadow: 0px 2px 20px 0px #00000080;
+  position: absolute;
+  top: 419px;
+  left: 639px;
+}
+
+/* End of Styling Register Button */
+
+/* Start of Styling middle paragraph in Banner */
+
+#banner h2 {
+  font-family: "source sans pro / ExtraLight";
+  text-align: center;
+  font-size: 32px;
+  position: absolute;
+  top: 631px;
+  left: 604px;
+}
+#banner h2 span {
+  font-family: "source sans pro / black";
+  color: var(--secondary-color);
+}
+
+/* End of Styling middle paragraph in Banner */
+
+/* Start of Styling Cards in Banners */
+
+.card-container {
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1009px;
+  height: 237px;
+  position: absolute;
+  top: 758px;
+  left: 217px;
+}
+.card {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.card h3 {
+  font-family: "source sans pro / black";
+}
+.card p {
+  font-family: "source sans pro / italic";
+}
+/* End of Styling Cards in Banners */
+
+/* Start of styling Quotes */
+
+#qutoes-cont {
+  width: 1440px;
+  height: 392px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex: row nowrap;
+  align-items: center;
+  place-content: center;
+}
+#qutoes-cont img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+#qutoes-cont div:first-of-type {
+  width: calc(943px - 730px);
+}
+#qutoes-cont div:nth-of-type(2) {
+  width: 730px;
+  height: 158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#qutoes-cont blockquote {
+  font-family: "source sans pro";
+  font-size: 22px;
+  line-height: 33.6px;
+}
+#qutoes-cont h3 {
+  font-family: "source sans pro / bold";
+  font-size: 22px;
+}
+#qutoes-cont p {
+  font-family: "source sans pro / italic";
+}
+/* End of styling Quotes */
+
+/* Start of styling Video list */
+
+#video-list {
+  background-color: #fff;
+  width: 100%;
+  height: 624px;
+  position: relative;
+}
+
+#video-list h2 {
+  font-family: "source sans pro / light";
+  font-size: 32px;
+  text-align: center;
+  margin-inline: auto;
+  padding-top: 87px;
+  width: fit-content;
+  color: var(--primary-color);
+  /* position: absolute;
+  top: 87px;
+  left: 482px; */
+}
+
+#video-list h2 span {
+  font-family: "source sans pro / bold";
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+.video-card-cont {
+  margin-inline: auto;
+  display: flex;
+  width: 1111px;
+  height: 335px;
+  justify-content: space-between;
+  position: absolute;
+  top: 202px;
+  left: 164px;
+}
+.video-card {
+  width: 255px;
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.video-card > :not(img) {
+  padding-inline: 13px;
+}
+.video-card h3 {
+  font-family: "source sans pro / bold";
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.video-card > p {
+  font-family: "source sans pro";
+  font-size: 14px;
+  color: rgb(7 22 41 / 50%);
+}
+.video-card div:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.video-card  div:nth-of-type(2){
+display: flex;
+flex: row nowrap;
+justify-content: space-between;
+}
+.video-card > div > h4,.video-card p:last-child {
+  font-family: "source sans pro / Semibold";
+  color: var(--secondary-color);
+}
+.video-card  img:last-child{
+  display: inline;
+  width: 107px;
+  margin-left: 13px;
+}
+
+/* End of styling Video list */
+/* Start of styling free-membership section */
+
+#membership-cont {
+  width: 100%;
+  height: 502px;
+  position: relative;
+}
+#membership-cont h2 {
+  margin-top: 70px;
+  margin-inline: auto;
+  width: fit-content;
+  font-family: "source sans pro / light";
+  font-size: 32px;
+}
+#membership-cont h2 span {
+  font-family: "source sans pro / bold";
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+.subscribe {
+  display: flex;
+  width: 1112px;
+  height: 153px;
+  justify-content: space-between;
+  margin-top: 98px;
+  margin-inline: auto;
+}
+
+.subscribe div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 257px;
+  height: 153px;
+  text-align: center;
+}
+
+#membership-cont button {
+  background-color: var(--secondary-color);
+  width: 162px;
+  height: 44px;
+  text-align: center;
+  border-radius: 22px;
+  font-family: "source sans pro / Semibold";
+  font-size: 14;
+  box-shadow: 0px 2px 20px 0px #00000080;
+  position: absolute;
+  top: 406px;
+  left: 639px;
+}
+/* End of styling free-membership section */
+
+/* Start of styling FAQ */
+
+#faq {
+  width: 100%;
+  height: 858px;
+  background-color: #fff;
+  position: relative;
+}
+
+#faq h2 {
+  font-family: "source sans pro / light";
+  font-size: 60px;
+  color: var(--primary-color);
+  text-align: center;
+  position: absolute;
+  top: 67px;
+  left: calc(50% - 68px);
+}
+
+.faq-cont {
+  color: var(--primary-color);
+  width: 920px;
+  height: 558px;
+  position: absolute;
+  top: 216px;
+  left: 249px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.faq-cont > div {
+  width: 350px;
+  height: 242px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.faq-cont h3 {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-family: "source sans pro / bold";
+}
+.faq-cont p {
+  font-size: 14px;
+  color: #00000080;
+  width: 350px;
+  line-height: 24px;
+}
+
+/* End of styling FAQ */
+
+/* Start of styling footer */
+
+footer {
+  width: 100%;
+  height: 249px;
+  position: relative;
+}
+footer img {
+  position: absolute;
+  width: 169px;
+  height: 30px;
+  top: 95px;
+  left: 165px;
+}
+
+footer p {
+  position: absolute;
+  top: 195px;
+  left: 672px;
+  font-size: 12px;
+  color: #fff;
+}
+
+footer div:last-child {
+  width: 130px;
+  position: absolute;
+  top: 90px;
+  left: 1070px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* End of styling footer */
