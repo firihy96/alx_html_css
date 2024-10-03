@@ -1,0 +1,332 @@
+/* Setting font sizes */
+@font-face {
+  font-family: "source sans pro";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Regular.otf);
+}
+/* ;
+src: url(../src/fonts/SourceSansPro/SourceSansPro-BlackIt.otf);
+src: url(../src/fonts/SourceSansPro/SourceSansPro-BoldIt.otf);
+
+src: url(../src/fonts/SourceSansPro/SourceSansPro-ExtraLightIt.otf);
+
+src: url(../src/fonts/SourceSansPro/SourceSansPro-Light.otf);
+
+src: url(../src/fonts/SourceSansPro/SourceSansPro-LightIt.otf);
+
+src: url(../src/fonts/SourceSansPro/SourceSansPro-SemiboldIt.otf); */
+@font-face {
+  font-family: "source sans pro / light";
+  src: url(..//src/fonts/SourceSansPro/SourceSansPro-Light.otf);
+}
+@font-face {
+  font-family: "source sans pro / bold";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Bold.otf);
+}
+@font-face {
+  font-family: "source sans pro / Semibold";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Semibold.otf);
+}
+@font-face {
+  font-family: "source sans pro / ExtraLight";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-ExtraLight.otf);
+}
+@font-face {
+  font-family: "source sans pro / black";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-Black.otf);
+}
+@font-face {
+  font-family: "source sans pro / italic";
+  src: url(../src/fonts/SourceSansPro/SourceSansPro-It.otf);
+}
+@font-face {
+  font-family: "spin cycle ot";
+  src: url(../src/fonts/Spin-Cycle-OT/spincycle_ot.otf);
+  /* src: url(../src/fonts/Spin-Cycle-OT/spincycle_3d_ot.otf); */
+}
+@font-face {
+  font-family: "spin cycle ot";
+  src: url(../src/fonts/Spin-Cycle-OT/spincycle_3d_ot.otf);
+}
+html {
+  width: 100%;
+  font-family: "source sans pro";
+  font-size: 62.5%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+:root {
+  --secondary-color: #ff6565;
+  --content-width-desktop: 71.5%;
+  --content-width-tablet: 80.5%;
+  --content-width-mobile: 77;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-image: url(./src/images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 800px;
+  background-position: center top;
+}
+main {
+  width: 100%;
+  margin-inline: auto;
+  position: relative;
+}
+/* Start of styling header */
+header {
+  width: 100%;
+  height: 59px;
+}
+nav {
+  width: var(--content-width-desktop);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 27px;
+}
+nav .menu-cont {
+  display: none;
+}
+header img {
+  width: 161px;
+}
+ul {
+  width: 255px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+ul li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "source sans pro / bold";
+  font-size: 1.2rem;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* End of styling header */
+
+/* ******************************************** */
+
+/* Start of styling banner */
+#banner {
+  width: 100%;
+  margin-inline: auto;
+  height: 741px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-cont {
+  max-width: 637px;
+  min-height: 313px;
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto auto 1fr auto;
+  align-items: center;
+}
+.banner-cont h1 {
+  font-family: "source sans pro / bold";
+  font-size: 3.2rem;
+}
+.banner-cont h2 {
+  font-family: "source sans pro / bold";
+  font-size: 1.6rem;
+}
+button {
+  font-family: "source sans pro / bold";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: var(--secondary-color);
+  border-color: transparent;
+  box-shadow: 0px 2px 20px 0px hsla(0, 0%, 0%, 0.5);
+}
+button:hover {
+  opacity: 0.9;
+}
+.banner-cont p {
+  font-family: "source sans pro";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+/* End of styling banner */
+
+/* ******************************************** */
+
+/* Start of styling what-we-do section */
+
+#what {
+  width: var(--content-width-desktop);
+  min-height: fit-content;
+  padding-block: 110px;
+  text-align: center;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.what-cont {
+  width: 100%;
+  min-height: 474px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.summary {
+  max-width: 637px;
+  margin-inline: auto;
+}
+.summary h2 {
+  font-family: "source sans pro / Semibold";
+  font-size: 3.2rem;
+}
+.summary p {
+  box-sizing: content-box;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  padding-top: 2em;
+}
+
+.icons {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  gap: 50px;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+.icons > img {
+  flex-basis: 207px;
+}
+
+/* End of styling what-we-do section */
+
+/* ******************************************** */
+/* Start of styling our results section */
+
+#results {
+  width: 100%;
+  min-height: 650px;
+  background-image: url(./src/images/headphones_hero_2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-cont {
+  width: var(--content-width-desktop);
+  min-height: 430px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.results-cont h2 {
+  font-family: "source sans pro / Semibold";
+  font-size: 3.2rem;
+  color: inherit;
+}
+.results-cont > p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.polygons {
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+  column-gap: 50px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.polygon {
+  background-color: var(--secondary-color);
+  width: 180.7px;
+  height: 171.86px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.polygon :first-child {
+  font-family: "source sans pro / bold";
+  font-size: 4.6rem;
+  line-height: 2.6rem;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-bottom: 0.5em;
+}
+.polygon :nth-child(2) {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* End of styling our results section */
+
+/* ******************************************** */
+
+/* Start of styling contact us */
+
+#contact {
+  width: 100%;
+  height: 613px;
+}
+.contact-cont {
+  text-align: center;
+  width: 335px;
+  height: 373px;
+  margin-inline: auto;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+}
+.contact-cont h2 {
+  font-family: "source sans pro / semibold";
+  font-size: 3.2rem;
+}
+form {
+  display: contents;
+}
+input {
+  height: 29px;
+  width: 100%;
+  border-color: transparent transparent #071629 transparent;
+  border-width: 1px;
+  background-color: transparent;
+}
+input::placeholder {
+  font-family: "source sans pro / semibold";
+  font-size: 1.4rem;
+  color: #071629;
+}
+/* End of styling contact us */
